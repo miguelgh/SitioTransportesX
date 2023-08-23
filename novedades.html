@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportes X - Novedades</title>
+
+    <!--fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+    <!--normalizar los navegadores-->
+    <link rel="stylesheet" href="css/normalizer.css">
+    <!--estilos-->    
+    <link rel="stylesheet" href="css/transportes.css">
+    <!--estilos para pantallas grandes-->
+    <link rel="stylesheet" media="(min-width: 650px)" href="css/maxStyle.css">
+</head>
+<body>
+    <header>
+        <div class="holder">
+            <a href="index.html"><img src="img/logo.png" alt="Logo Transportes X">
+            <h1>Transportes X</h1></a>
+        </div>
+    </header>
+     <!-- boton hamburguesa -->
+     <div class="fondo-boton">
+        <button id="boton-menu">
+            <span><img src="img/menu.png" alt=""></span> menu
+        </button>
+    </div>
+    <!-- fin boton -->
+    
+    <nav id="menu">
+        <div class="holder">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a class="activo" href="#">Novedades</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="holder">
+        <div class="bloque">
+        <h2>Novedades</h2>
+            <div class="novedades">
+                <h3>Titulo</h3>
+                <h4>Subtitulo</h4>
+                <p>Descripción - Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo aliquid pariatur, vero quasi.</p>
+                <hr>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="holder">
+            <p>Diseñado por Atrezzo &reg; <script>document.write(new Date().getFullYear())</script></p>
+            <!--la función new date.getFulNewYear devuelve el año actual y lo escribe en el html-->
+        </div>
+    </footer>
+    
+    <!-- script para el menu -->
+    <script src="js/script.js"></script>
+</body>
+</html>

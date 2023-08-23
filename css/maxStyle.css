@@ -1,0 +1,88 @@
+/*elimino el botón del menu*/
+.fondo-boton{
+    display:none;
+}
+#menu{
+    max-height: 30px;
+}
+#menu ul{
+    flex-direction: row;
+    justify-content:flex-start;
+    
+}
+#menu ul li{
+    /*con flex-grow se especifica el espacio que puede ocupar cada objeto en relación al espacio sobrante*/
+    flex-grow: 1;
+}
+#menu ul li a{
+    padding: 5px 6px;
+    border: 0px;
+}
+
+/*home*/
+.columnas{
+    flex-direction: row;
+    justify-content: space-between;
+}
+.bienvenidos{
+    width: 70%;
+}
+.testimonios{
+    width: 30%;
+}
+/*fin home*/
+
+/*nosotros*/
+.personas{
+    flex-direction: row;
+    justify-content: space-between;
+}
+.persona{
+    width: 18%;
+}
+.persona h5{
+    font-size: 14px;
+}
+.persona h6{
+    font-size: 11px;
+}
+.persona p{
+    font-size: 11px;
+}
+/*fin nosotros*/
+
+/*servicios*/
+.servicio{
+    flex-direction: row;
+    align-items: start;
+    gap:30px;
+}
+.servicio:nth-child(even){
+    flex-direction: row-reverse;
+}
+.servicio img{
+    width: 100%;
+    margin: 0px;
+    border-radius: 20px;
+}
+.servicio .info h4{
+    text-align: initial;
+}
+/*fin servicios*/
+
+/*galeria*/
+.galeria{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.galeria img{
+    width: 23%;
+}
+/*fin galeria*/
+
+/*contacto*/
+.contacto{
+    flex-direction: row;
+}
+/*fin contacto*/

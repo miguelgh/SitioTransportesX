@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportes X</title>
+
+    <!--fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    
+    <!--normalizar los navegadores-->
+    <link rel="stylesheet" href="css/normalizer.css">
+    <!--estilos-->    
+    <link rel="stylesheet" href="css/transportes.css">
+    <!--estilos para pantallas grandes-->
+    <link rel="stylesheet" media="(min-width: 650px)" href="css/maxStyle.css">
+</head>
+<body>
+    <header>
+        <div class="holder">
+            <a href="index.html"><img src="img/logo.png" alt="Logo Transportes X">
+            <h1>Transportes X</h1></a>
+        </div>
+    </header>
+
+     <!-- boton hamburguesa -->
+     <div class="fondo-boton">
+        <button id="boton-menu">
+            <span><img src="img/menu.png" alt=""></span> menu
+        </button>
+    </div>
+    <!-- fin boton --> 
+    <nav id="menu">
+        <div class="holder">
+            <ul>
+                <li><a class="activo" href="#">Home</a></li><!--agregamos la class activo para marcar que página es la actual-->
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="novedades.html">Novedades</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="holder">
+        <div>
+            <img class="portada" src="img/home/img01.jpg" alt="avión">
+        </div>
+        <div class="columnas">
+            <section class="bienvenidos">
+                <h2>Bienvenidos</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, sequi consectetur iure maiores, id omnis quisquam officiis atque quae nisi laudantium fuga inventore ipsa earum aliquid? Nisi dolore voluptate quod.
+                Asperiores architecto rerum iusto consequuntur, atque qui iure cumque quam dolorum voluptates. Vero ullam harum quos nobis maiores rerum dolorem repellat molestias quidem quaerat possimus nulla assumenda, aut, veritatis sapiente.
+                Rerum harum saepe est. Atque delectus doloremque recusandae ducimus perferendis quia quam commodi nam molestias voluptates illo amet laudantium ipsam impedit beatae, aliquid fugit eligendi quas dolore deserunt? Quaerat, commodi!</p>
+            </section>
+            <section class="testimonios">
+                <h2>Testimonios</h2>
+                <div class="testimonio">
+                    <span class="cita">Simplemente Excelente</span>
+                    <span class="autor">Juan Gómez - zapatos.com</span>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="holder">
+            <p>Diseñado por Atrezzo &reg; <script>document.write(new Date().getFullYear())</script></p>
+            <!--la función new date.getFulNewYear devuelve el año actual y lo escribe en el html-->
+        </div>
+    </footer>
+
+     <!-- script para el menu -->
+     <script src="js/script.js"></script>
+</body>
+</html>

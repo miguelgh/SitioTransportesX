@@ -1,0 +1,313 @@
+* {/*selector universal, reset de estilos*/
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+body{
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;/*1 rem*/
+    line-height: 20px;
+}
+
+.holder{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #2e64a1;
+    padding: 16px 0;/*1rem 0*/
+}
+header img{
+    margin-left: 10px;
+    width: 100px;
+}
+header h1{
+    color: white;
+    font-size: 40px;
+    font-weight: 100;
+    font-style: italic;
+    display: inline-block;
+    position: relative;
+    bottom: 35px;
+    margin-left: 10px;
+}
+
+/* menu hamburguesa */
+#menu{  
+    background-color: #6da9ed;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+    /*con max-height en 0 hace que no se vea, para luego hacerlo aparecer con la transición y aumentando a 26px en la otra clase*/
+    max-height: 0;
+    /* overflow hidden, es necesario para que el objeto no aparezca aunque tenga max-height 0*/
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+#menu.mostrando {
+    max-height: 190px; /* Ajustar este valor según la altura máxima del menú */
+}
+
+.fondo-boton{
+    width: 100%;
+    background-color: #365475;
+}
+#boton-menu{
+    background-color: #6da9ed;
+    color: #fff;
+    font-size: 24px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+}
+#boton-menu img{
+    padding-right: 5px;
+}
+/* Rotar el icono de la hamburguesa al abrir el menú */
+#boton-menu span img.rotar{
+    transform: rotate(90deg);
+}
+
+#menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#menu ul li a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    padding: 5px 0px;
+    border-bottom: 2px solid #5e95d4;
+    display: block;
+    text-align: center;
+}
+#menu ul li a:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+#menu ul li a.activo{/*para marcar la página actual*/
+    background-color: #4c76a5;
+}
+/* fin del menú */
+
+/*home*/
+h2{
+    color: #2e64a1;
+    font-weight: 400;
+    margin: 10px 0px;
+}
+
+.portada{
+    width: 100%;
+}
+.columnas{
+    display: flex;
+    flex-direction: column;
+}
+.bienvenidos{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+ .bienvenidos p{
+    font-size: 16px;
+ }
+
+.testimonios{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.testimonio{
+    background-color: #ccc;
+    padding: 10px;
+}
+.testimonio .cita{
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    margin-top: 5px;
+    display: block;
+}
+
+.testimonio .autor{
+    font-size: 10px;
+    text-align: center;
+    display: block;
+    margin: 5px 0;
+}
+/*fin home*/
+
+/*Nosotros*/
+.bloque{
+    padding: 20px;
+}
+.bloque p{
+    font-size: 16px;
+}
+.staff{
+    padding: 20px;
+}
+.personas{
+    display: flex;
+    flex-direction: column;
+}
+.persona{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    padding: 13px;
+    margin: 5px 0px;
+    box-sizing: border-box;
+}
+.persona img{
+    border-radius: 50%;
+    max-width: 60%;
+    box-shadow: 0 0 10px rgba(2, 102, 233, 0.5) ;
+}
+.persona h5, .persona h6{
+    margin: 0;
+    font-weight:normal;
+    color: #2e64a1;
+}
+.persona h5{
+    font-size: 18px;
+    margin-top: 5px;
+}
+.persona h6{
+    font-size: 15px;
+    margin-top: 5px;
+}
+.persona p{
+    color: #666;
+    font-size: 14px;
+}
+/*fin Nosotros*/
+
+/*Servicios*/
+.servicio{
+    border:1px solid #ccc;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 16px 5px;
+    display: flex;
+    gap: 20px;
+    align-items: start;
+    flex-direction: column;
+}
+.servicio .info h4{
+    color: #2e64a1;
+    font-style: italic;
+    font-size: 20px;
+    border-bottom: 1px solid #2e64a1;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.servicio .info p{
+    margin-top: 5px;
+    font-size: 14px;
+}
+.servicio img{
+    border-radius: 40px;
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*fin servicios*/
+
+/*Galeria*/
+.galeria{
+    display: flex;
+    flex-direction: column;
+}
+
+.galeria img{
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 0.6em;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-right: 2%;
+}
+/*fin galeria*/
+
+/*Novedades*/
+.novedades h4{
+    font-weight: normal;
+}
+.novedades p{
+    margin: 10px 0px;
+}
+/*fin novedades*/
+
+/*contacto*/
+.contacto{
+    display: flex;
+    flex-direction: column;
+}
+.contacto div{
+    width: 100%;
+}
+.formulario p{
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.formulario p label{
+    /* con el min-width controla el espacio entre el input y el label, así da una separación pareja entre todos los label */
+    min-width: 80px;
+}
+.formulario p:nth-child(4){
+    /* con el 4 busco el cuarto "p" que está dentro de formulario y le asigno una propiedad */
+    align-items:start;
+}
+.formulario input{
+    border: 1px solid #b3b3b3;
+}
+.formulario textarea{
+    resize: none;/*evita que a la caja se le pueda modificar el tamaño*/
+    height: 150px;
+    border: 1px solid #b3b3b3;
+}
+.formulario input[type="submit"]{
+    background-color: #6da9ed;
+    color: white;
+    font-size: 16px;
+    padding: 6px 20px;
+    width: auto;
+    position: relative;
+    left: 5rem; /*80px la misma separación que "formulario p label" min-widht 80px, así el botón queda alineado con los input*/
+    cursor: pointer;
+    border: none;
+}
+.formulario input[type="submit"]:hover{
+    background-color: #2e64a1;
+}
+.datos p{
+    font-size: 14px;
+}
+.datos ul li{
+    font-size: 13px;
+    margin-left: 20px;
+}
+/* fin Contacto */
+
+footer{
+    background-color: #ccc;
+    clear:both;
+    color: #333;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 20px;
+}
